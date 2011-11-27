@@ -113,6 +113,15 @@ td { vertical-align: top; }
 	color: #fff;
 }
 
+/* ==|== icon styles =====================================================
+   Author: Sebastian Gaul <sebastian@dev.mgvmedia.com>
+   ========================================================================== */
+.icon {
+	background: transparent none no-repeat left top;
+	margin-right: .3em;
+	vertical-align: middle;
+}
+
 /* ==|== IWA styles =====================================================
    Author: Sebastian Gaul <sebastian@dev.mgvmedia.com>
    ========================================================================== */
