@@ -107,7 +107,8 @@ td { vertical-align: top; }
 	background-color: #fff;
 	color: #000;
 }
-.menubar.expanded li:hover {
+.menubar.expanded li:hover,
+.menubar.expanded li.opened {
 	background-color: #4A90D9;
 	color: #fff;
 }
