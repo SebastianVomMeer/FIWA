@@ -1,0 +1,98 @@
+body {
+	background: #F2F1F0;
+	font-family: Ubuntu;
+	font-size: 14px;
+}
+::-moz-selection,
+::selection { background: #F07746; color: #fff; text-shadow: none; }
+
+/*background: rgb(249,133,87);
+background: -moz-linear-gradient(top, rgba(249,133,87,1) 0%, rgba(236,113,64,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,133,87,1)), color-stop(100%,rgba(236,113,64,1)));
+background: -webkit-linear-gradient(top, rgba(249,133,87,1) 0%,rgba(236,113,64,1) 100%);
+background: -o-linear-gradient(top, rgba(249,133,87,1) 0%,rgba(236,113,64,1) 100%);
+background: -ms-linear-gradient(top, rgba(249,133,87,1) 0%,rgba(236,113,64,1) 100%);
+background: linear-gradient(top, rgba(249,133,87,1) 0%,rgba(236,113,64,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f98557', endColorstr='#ec7140',GradientType=0 );*/
+
+/* ==|== menubar styles =====================================================
+   Author: Sebastian Gaul <sebastian@dev.mgvmedia.com>
+   ========================================================================== */
+.menubar {
+	background: #3C3B37;
+	border-bottom: none;
+	color: #fff;
+
+}
+.menubar li,
+.menubar li.separator:hover,
+.menubar.expanded li.separator:hover {
+	background-color: #3C3B37;
+	color: #fff;
+}
+.menubar > ul ul {
+	border: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+	margin-top:0;
+}
+.menubar.expanded > ul > li:hover,
+.menubar.expanded > ul > li.opened {
+	background: rgb(83,82,77);
+	background: -moz-linear-gradient(top, rgba(83,82,77,1) 0%, rgba(58,58,55,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(83,82,77,1)), color-stop(100%,rgba(58,58,55,1)));
+	background: -webkit-linear-gradient(top, rgba(83,82,77,1) 0%,rgba(58,58,55,1) 100%);
+	background: -o-linear-gradient(top, rgba(83,82,77,1) 0%,rgba(58,58,55,1) 100%);
+	background: -ms-linear-gradient(top, rgba(83,82,77,1) 0%,rgba(58,58,55,1) 100%);
+	background: linear-gradient(top, rgba(83,82,77,1) 0%,rgba(58,58,55,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53524d', endColorstr='#3a3a37',GradientType=0 );
+	border: 1px solid #353535;
+	border-bottom-width: 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	text-shadow: none;
+}
+.menubar > ul > li {
+	border: 1px solid #3C3B37;
+	border-bottom-width: 0;
+	margin-top:1px;
+	padding-top:0;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, .5);
+}
+.menubar > ul > li > div,
+.menubar > ul > li > a {
+	padding-top:1px;
+}
+.menubar.expanded li li:hover,
+.menubar.expanded li li.opened {
+	background: rgb(249,133,87);
+	background: -moz-linear-gradient(top, rgba(249,133,87,1) 0%, rgba(236,113,64,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,133,87,1)), color-stop(100%,rgba(236,113,64,1)));
+	background: -webkit-linear-gradient(top, rgba(249,133,87,1) 0%,rgba(236,113,64,1) 100%);
+	background: -o-linear-gradient(top, rgba(249,133,87,1) 0%,rgba(236,113,64,1) 100%);
+	background: -ms-linear-gradient(top, rgba(249,133,87,1) 0%,rgba(236,113,64,1) 100%);
+	background: linear-gradient(top, rgba(249,133,87,1) 0%,rgba(236,113,64,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f98557', endColorstr='#ec7140',GradientType=0 );
+	color: #fff;
+	border: 1px solid #CC5D31;
+}
+.menubar li li,
+.menubar li li {
+	border: 1px solid #3C3B37;
+	padding: 0px 0;
+}
+.menubar li li.separator:hover,
+.menubar li.separator:hover,
+.menubar li.separator {
+	background: #3C3B37;
+	border: 1px solid #3C3B37;
+}
+.menubar li.separator hr {
+	border: none;
+	border-top:1px solid #353535;
+	background: #464541;
+	height: 1px;
+}
