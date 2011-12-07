@@ -113,6 +113,34 @@ td { vertical-align: top; }
 	color: #fff;
 }
 
+/* ==|== toolbar styles =====================================================
+   Author: Sebastian Gaul <sebastian@dev.mgvmedia.com>
+   ========================================================================== */
+
+.toolbar {
+	margin: 2px 0 2px;
+}
+.toolbar a, .toolbar div {
+	cursor: default;
+	color: inherit;
+	display: inline-block;
+	height: 24px;
+	padding: 5px;
+	text-decoration: none;
+}
+.toolbar > ul > li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* ==|== content styles =====================================================
+   Author: Sebastian Gaul <sebastian@dev.mgvmedia.com>
+   ========================================================================== */
+
+.content {
+	margin: 2px 5px;
+}
+
 /* ==|== icon styles =====================================================
    Author: Sebastian Gaul <sebastian@dev.mgvmedia.com>
    ========================================================================== */

@@ -63,10 +63,22 @@
 		</ul>
 	</nav>
 
-	<!-- add an icon before the element's text -->
-	<div data-icon="actions/document-new">New Document</div>
-	<!-- the js tries to find a proper icon size based on the parent's height -->
-	<div data-icon="actions/document-open" style="height: 22px;">Open Document</div>
+	<nav data-widget="toolbar">
+		<ul>
+			<li>
+				<!-- add an icon before the element's text -->
+				<a data-icon="22x22/actions/document-new" href="#top">New</a>
+			</li>
+			<li>
+				<a data-icon="22x22/actions/document-open" href="#top">Open</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="padded content">
+		<p>This is FIWA, a Framework for Integrated Web Applications.</p>
+		<p>Visit <a href="http://sgaul.de/category/webentwicklung/fiwa/">my blog</a> or <a href="https://github.com/SebastianG86/FIWA">Github page</a>.</p>
+	</section>
 
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>

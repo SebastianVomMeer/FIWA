@@ -111,7 +111,6 @@ window.log=function(){log.history=log.history||[];log.history.push(arguments);if
 		prepend : function(options) {
 			return this.each(function(){
 				var path = $(this).icon('_findIcon', options);
-				var size = $(this).icon('_getIconSize', options);
 				console.debug(path);
 				$(this).prepend(
 					$('<span/>')
@@ -120,32 +119,16 @@ window.log=function(){log.history=log.history||[];log.history.push(arguments);if
 						.css({
 							backgroundImage : 'url(' + path + ')',
 							display: 'inline-block',
-							height: size,
-							width: size,
+							height: 22,
+							width: 22,
 						})
 				);
 			});
 		},
 
 		_findIcon : function(options) {
-			var size = $(this).icon('_getIconSize', options);
 			var icon = options.icon;
-			return path + size + 'x' + size + '/'
-				+ icon.toString() + fileExtension;
-		},
-
-		_getIconSize : function(options) {
-			var maxSize = $(this).height();
-			var size = availableSizes[0];
-			var icon = options.icon;
-			for (var i = 0; i < availableSizes.length; i++) {
-				if (availableSizes[i] <= maxSize) {
-					size = availableSizes[i];
-				} else {
-					break;
-				}
-			}
-			return size;
+			return path + icon.toString() + fileExtension;
 		},
 
 	}
@@ -158,6 +141,34 @@ window.log=function(){log.history=log.history||[];log.history.push(arguments);if
 			return methods.init.apply(this, arguments);
 		} else {
 			$.error('Method ' +  method + ' does not exist on jQuery.icon');
+		}
+	};
+
+})(jQuery);
+
+
+/*
+ * Toolbar jQuery Plugin
+ * Author: Sebastian Gaul <sebastian@dev.mgvmedia.com>
+ */
+(function($){
+
+	var methods = {
+		init : function(options) {
+			return this.each(function(){
+				$(this).addClass('toolbar');
+			});
+		},
+	}
+
+	$.fn.toolbar = function(method) {
+		// Method calling logic
+		if (methods[method]) {
+			return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
+		} else if (typeof method === 'object' || ! method) {
+			return methods.init.apply(this, arguments);
+		} else {
+			$.error('Method ' +  method + ' does not exist on jQuery.toolbar');
 		}
 	};
 
